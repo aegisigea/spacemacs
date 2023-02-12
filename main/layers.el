@@ -30,29 +30,33 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
-     ;; `M-m f e R' (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
-     ;; auto-completion
-     ;; better-defaults
-     emacs-lisp
-     ;; git
+   '(;; Checkers
+     syntax-checking
+     ;; Completion
+     auto-completion
      helm
-     ;; lsp
-     ;; markdown
-     multiple-cursors
+     ;; Emacs
      ;; org
-     ;; rust
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
-     ;; spell-checking
-     ;; syntax-checking
-     ;; version-control
-     treemacs)
-
+     ;; File Trees
+     treemacs
+     ;; Miscellaneous
+     multiple-cursors
+     ;; Programming Languages
+     emacs-lisp
+     rust
+     ;; Source Control
+     git
+     (version-control :variables
+                      version-control-diff-tool 'diff-hl
+                      version-control-diff-side 'left)
+     ;; Themes
+     ;; Tools
+     lsp
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
+     ;; Vim
+     )
 
    ;; List of additional packages that will be installed without being wrapped
    ;; in a layer (generally the packages are installed only and should still be
