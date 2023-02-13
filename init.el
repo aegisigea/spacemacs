@@ -6,3 +6,4 @@
 (load "~/.spacemacs.d/user/init")
 (load "~/.spacemacs.d/user/load")
 (load "~/.spacemacs.d/user/config")
+(load "~/.spacemacs.d/.custom")
