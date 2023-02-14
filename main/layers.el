@@ -44,6 +44,10 @@ This function should only modify configuration layer settings."
      ;; Programming Languages
      emacs-lisp
      rust
+     ;; Operating Systems
+     (osx :variables
+          osx-option-as 'meta
+          osx-right-option-as 'none)
      ;; Source Control
      git
      (version-control :variables
