@@ -43,7 +43,8 @@ This function should only modify configuration layer settings."
      multiple-cursors
      ;; Programming Languages
      emacs-lisp
-     rust
+     (rust :variables
+           rust-format-on-save t)
      ;; Operating Systems
      (osx :variables
           osx-option-as 'meta
